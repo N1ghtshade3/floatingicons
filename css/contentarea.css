@@ -1,0 +1,23 @@
+/*Add the content area*/
+#contentarea{
+width: 70%;
+height: 100%;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border-top:none;
+border-right: 3px solid #CCCCCC;
+border-bottom:none;
+border-left: 3px solid #CCCCCC;
+-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+background: rgba(0,0,0,0.95);
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}

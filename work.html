@@ -1,0 +1,288 @@
+<!--Figure out auto-sizing of the lightbox-->
+
+<html>
+
+<head>
+
+<title> Matt Newell | Classwork </title>
+
+<meta name=”description” content=”My name is Matt Newell and I am available to do freelance writing, coding, or graphic design.”>
+
+
+<!--Adds a background and resizes it-->
+<img src="assets/techwork.jpg" id="background">
+</img>
+<style>
+#background{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+</style>
+
+<!--Bounces the images.-->
+<style>
+#notepad {
+	width:15%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	/*
+    background-image: url(assets/notepad.ico);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    -webkit-transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;*/
+}
+#notepad:hover {
+	-webkit-transform: scale(1.1,1.1);
+	
+	width:20%
+	
+/*
+    background-size: 103%;
+	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255,255,255,0.2)));*/
+}
+#photoshop {
+	width:15%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	/*
+    background-image: url(assets/photoshop.ico);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    -webkit-transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;*/
+}
+#photoshop:hover {
+	-webkit-transform: scale(1.1,1.1);
+	
+	width:20%
+	/*
+	
+    background-size: 103%;
+	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255,255,255,0.2)));*/
+}
+#flash {
+	width:15%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	/*
+    background-image: url(assets/flash.ico);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    -webkit-transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;*/
+}
+#flash:hover {	
+	-webkit-transform: scale(1.1,1.1);
+	
+	width:20%
+	/*
+    background-size: 103%;
+	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255,255,255,0.2)));*/
+}
+#dreamweaver {
+	width:15%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	/*
+    background-image: url(assets/dreamweaver.ico);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    -webkit-transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;*/
+}
+#dreamweaver:hover {
+	-webkit-transform: scale(1.1,1.1);
+	
+	width:20%
+	/*
+    background-size: 103%;
+	
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255,255,255,0.2)));*/
+}
+#writing {
+	width:15%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	/*
+    background-image: url(assets/writing.ico);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    -webkit-transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;*/
+}
+</style>
+
+
+<!--Styles the menu-->
+<style>
+#mainmenu{
+width: 80%;
+height: 25%;
+-webkit-border-radius: 63px;
+-moz-border-radius: 63px;
+border-radius: 63px;
+border: 0px solid #CCCCCC;
+-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+background: rgba(0,0,0,0.0);
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+</style>
+
+
+<!--Styles the popup-->
+<style>
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:absolute;
+z-index: 9001;
+top:0px;
+left:0px;
+width:100%;
+}
+#popUpDiv {
+position:absolute;
+background-color:#eeeeee;
+width:300px;
+height:320px;
+z-index: 9002;
+}
+</style>
+
+
+<!--Puts the info in the bottom right-->
+<style>
+#info{
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+}
+</style>
+
+<style>
+#home{
+	z-index:9001;
+}
+	</style>
+
+</head>
+
+
+<body>
+
+<!--Adds a menu and icons-->
+<div id="mainmenu">
+
+<center>
+<a href="notepad.html"><img id="notepad" class="mainicon" src="assets/notepad.png"></a>
+
+<a href="photoshop.html"><img id="photoshop" class="mainicon" src="assets/photoshop.ico"></a>
+
+<a href="assets/snake.swf"><img id="flash" class="mainicon" src="assets/flash.ico"></a>
+
+<a href="tripsmart/index.html"><img id="dreamweaver" class="mainicon" src="assets/dreamweaver.ico"></a>
+
+</center>
+
+</div>
+
+
+<!--Adds a popup window-->
+<div id="blanket" style="display:none;"></div>
+<div id="popUpDiv" style="display:none;">
+<a href="#" onClick="popup('popUpDiv')"> <img src = "assets/close.png" width = "9%" id="close" align="right"></a>
+
+<center>
+<div id="popupcontent"> <br><br> Last updated
+<!-- #BeginDate format:fcSw1 -->Wednesday, 22 January, 2014<!-- #EndDate --><br><br>Website design &copy; Matt Newell, 2014<br>All rights reserved.<br><br>I do not own all images on this site. All<br>such images remain the property of their<br>respective owner(s) and are used with<br>permission.<br><br>Email: <a href="mailto:developer.newell@gmail.com">developer.newell@gmail.com</a><br>Phone: (203) 307-0306
+</div>
+</center>
+
+
+</div>
+<a href="#" onClick="popup('popUpDiv')"> <img src = "assets/info.png" width = "3%" id="info"></a>
+
+<script type="text/javascript" src="js/popup.js"></script>
+
+<style>
+#popupcontent {
+	margin-right:auto;
+}
+#close {
+	margin-right: inherit;
+}
+</style>
+
+<a href="index.html"><img src="assets/home.png" height="5%" width="auto" id="home"></a>
+
+</body>
+
+
+
+
+</html> 
